@@ -1,7 +1,6 @@
 # GA-X99P-SLI
-Hackintosh X99
-
--
+Working system for Gigabyte GA-X99P-SLI.
+Just create a EFI partition on your bootdrive and clone this repo. Woila, it just works! (If you have the simular setup)
 
 # Hardware
 - Gigabyte GA-X99P-SLI, Socket-2011-3
@@ -9,5 +8,3 @@ Hackintosh X99
 - Intel® SSD 600p Series 512GB PCIe M.2
 - Corsair Veng. LED DDR4 3200Mhz 32GB
 - Nvidia GeForce GTX 970
-
--
