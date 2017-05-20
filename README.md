@@ -8,3 +8,6 @@ Just create a EFI partition on your bootdrive and clone this repo. Woila, it jus
 - Intel® SSD 600p Series 512GB PCIe M.2
 - Corsair Veng. LED DDR4 3200Mhz 32GB
 - Nvidia GeForce GTX 970
+
+# contact
+If you have any fixes or stuff you want me to add to the setup, please contact me at jaco(a)live.no
