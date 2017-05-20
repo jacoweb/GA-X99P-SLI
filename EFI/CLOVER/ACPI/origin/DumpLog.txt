@@ -1,0 +1,132 @@
+15:792  13:123  Found BIOS RSDP at FCD40
+15:792  0:000  Printing ACPI tables from RSDP FCD40 ...
+15:792  0:000   FCD40: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+15:792  0:000    (Xsdt: A60A6090, Rsdt: A60A6028)
+15:792  0:000    A60A6090: 'XSDT', 'A M I', Rev: 1, Len: 156
+15:792  0:000    A60A6028: 'RSDT', 'A M I', Rev: 1, Len: 96
+15:792  0:000    Tables in Xsdt: 15
+15:792  0:000    0. A60DB040: 'FACP', 'A M I', Rev: 5, Len: 268
+15:792  0:000        (Dsdt: A60A61C0, Facs: A643EF80, XDsdt: A60A61C0, XFacs: 0)
+15:792  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703
+15:795  0:003        A643EF80: 'FACS', Ver: 2, Len: 64
+15:795  0:000    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244
+15:795  0:000    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68
+15:795  0:000    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156
+15:795  0:000    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60
+15:795  0:000    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173
+15:795  0:000    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66
+15:795  0:000    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56
+15:795  0:000    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144
+15:795  0:000    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45
+15:795  0:000    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440
+15:795  0:000    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64
+15:795  0:000    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162
+15:795  0:000    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113
+15:795  0:000    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160
+15:795  0:000    Tables in Rsdt: 15
+15:795  0:000    0. A60A6138: 'FACP', 'A M I', Rev: 2, Len: 132
+15:795  0:000        (Dsdt: A60A61C0, Facs: A643EF40)
+15:795  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703
+15:798  0:003        A643EF40: 'FACS', Ver: 0, Len: 64
+15:798  0:000    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244
+15:798  0:000    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68
+15:798  0:000    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156
+15:798  0:000    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60
+15:798  0:000    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173
+15:798  0:000    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66
+15:798  0:000    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56
+15:798  0:000    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144
+15:798  0:000    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45
+15:798  0:000    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440
+15:798  0:000    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64
+15:798  0:000    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162
+15:798  0:000    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113
+15:798  0:000    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160
+15:798  0:000  Found UEFI Acpi 2.0 RSDP at A60A6000
+15:798  0:000  Saving ACPI tables from RSDP A60A6000 to EFI\CLOVER\ACPI\origin ...
+15:798  0:000   A60A6000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+15:822  0:024    (Xsdt: A60A6090, Rsdt: A60A6028)
+15:822  0:000    A60A6090: 'XSDT', 'A M I', Rev: 1, Len: 156 -> XSDT.aml
+15:839  0:017    A60A6028: 'RSDT', 'A M I', Rev: 1, Len: 96 -> RSDT.aml
+15:857  0:017    Tables in Xsdt: 15
+15:857  0:000    0. A60DB040: 'FACP', 'A M I', Rev: 5, Len: 268 -> FACP.aml
+15:874  0:017        (Dsdt: A60A61C0, Facs: A643EF80, XDsdt: A60A61C0, XFacs: 0)
+15:874  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703 -> DSDT.aml
+15:922  0:048        A643EF80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+15:940  0:017    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244 -> APIC.aml
+15:957  0:017    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+15:975  0:017    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+15:992  0:017    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+16:009  0:017    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173 -> SSDT-0.aml
+16:037  0:027    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+16:057  0:019    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+16:076  0:019    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144 -> MSCT.aml
+16:096  0:019    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45 -> SLIT.aml
+16:116  0:019    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440 -> SRAT.aml
+16:135  0:019    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64 -> WDDT.aml
+16:155  0:019    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162 -> SSDT-1.aml
+16:180  0:024    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113 -> NITR.aml
+16:202  0:021    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160 -> ASF!.aml
+16:223  0:021    Tables in Rsdt: 15
+16:223  0:000    0. A60A6138: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+16:245  0:021        (Dsdt: A60A61C0, Facs: A643EF40)
+16:245  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703
+16:248  0:003        A643EF40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+16:270  0:021    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244
+16:270  0:000    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:270  0:000    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:270  0:000    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:270  0:000    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173
+16:270  0:000    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:270  0:000    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56
+16:270  0:000    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144
+16:270  0:000    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45
+16:270  0:000    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440
+16:270  0:000    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64
+16:270  0:000    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162
+16:270  0:000    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113
+16:270  0:000    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160
+16:270  0:000  Found UEFI Acpi 1.0 RSDP at A60A6000
+16:270  0:000  Printing ACPI tables from RSDP A60A6000 ...
+16:270  0:000   A60A6000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+16:270  0:000    (Xsdt: A60A6090, Rsdt: A60A6028)
+16:270  0:000    A60A6090: 'XSDT', 'A M I', Rev: 1, Len: 156
+16:270  0:000    A60A6028: 'RSDT', 'A M I', Rev: 1, Len: 96
+16:270  0:000    Tables in Xsdt: 15
+16:270  0:000    0. A60DB040: 'FACP', 'A M I', Rev: 5, Len: 268
+16:270  0:000        (Dsdt: A60A61C0, Facs: A643EF80, XDsdt: A60A61C0, XFacs: 0)
+16:270  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703
+16:273  0:003        A643EF80: 'FACS', Ver: 2, Len: 64
+16:273  0:000    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244
+16:273  0:000    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:273  0:000    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:273  0:000    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:273  0:000    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173
+16:273  0:000    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:273  0:000    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56
+16:273  0:000    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144
+16:273  0:000    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45
+16:273  0:000    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440
+16:273  0:000    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64
+16:273  0:000    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162
+16:273  0:000    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113
+16:273  0:000    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160
+16:273  0:000    Tables in Rsdt: 15
+16:273  0:000    0. A60A6138: 'FACP', 'A M I', Rev: 2, Len: 132
+16:273  0:000        (Dsdt: A60A61C0, Facs: A643EF40)
+16:273  0:000        A60A61C0: 'DSDT', 'A M I', Rev: 2, Len: 216703
+16:276  0:003        A643EF40: 'FACS', Ver: 0, Len: 64
+16:276  0:000    1. A60DB150: 'APIC', 'A M I', Rev: 3, Len: 244
+16:276  0:000    2. A60DB248: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:276  0:000    3. A60DB290: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:276  0:000    4. A60DB330: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:276  0:000    5. A60DB370: 'SSDT', 'IdeTable', Rev: 1, Len: 1173
+16:276  0:000    6. A60DB808: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:276  0:000    7. A60DB850: 'HPET', 'A M I', Rev: 1, Len: 56
+16:276  0:000    8. A60DB888: 'MSCT', 'A M I', Rev: 1, Len: 144
+16:276  0:000    9. A60DB918: 'SLIT', 'A M I', Rev: 1, Len: 45
+16:276  0:000    10. A60DB948: 'SRAT', 'A M I', Rev: 3, Len: 4440
+16:276  0:000    11. A60DCAA0: 'WDDT', 'A M I', Rev: 1, Len: 64
+16:276  0:000    12. A60DCAE0: 'SSDT', 'PmMgt', Rev: 2, Len: 67162
+16:276  0:000    13. A60ED140: 'NITR', 'A M I', Rev: 2, Len: 113
+16:276  0:000    14. A60ED1B8: 'ASF!', ' HCG', Rev: 32, Len: 160
