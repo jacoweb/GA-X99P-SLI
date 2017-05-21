@@ -2,6 +2,8 @@
 Working system for Gigabyte GA-X99P-SLI.
 Just create a EFI partition on your bootdrive and clone this repo. Woila, it just works! (If you have the simular setup)
 
+This setup works like an real mac. Even sleep!
+
 ![Screenshot](osx.png)
 
 # Hardware
