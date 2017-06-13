@@ -47,7 +47,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>PmMgt</string>
+				<string>CpuPm</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0lst</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -55,13 +61,20 @@
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
-			<true/>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
 		</dict>
+		<key>smartUPS</key>
+		<true/>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 darkwake=0 npci=0x2000 nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12</string>
+		<string>-v slide=0 -xcpm darkwake=0 npci=0x2000 nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -82,7 +95,7 @@
 		<key>Type</key>
 		<string>0x0a02</string>
 		<key>UseARTFrequency</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -163,7 +176,14 @@
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
-		<false/>
+		<dict>
+			<key>ATI</key>
+			<false/>
+			<key>Intel</key>
+			<false/>
+			<key>NVidia</key>
+			<false/>
+		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
 	</dict>
@@ -175,10 +195,6 @@
 		<false/>
 		<key>Debug</key>
 		<false/>
-		<key>DellSMBIOSPatch</key>
-		<false/>
-		<key>FakeCPUID</key>
-		<string>0x0306a0</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
@@ -187,6 +203,87 @@
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm_bootstrap Sierra © Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g8PEg/si
+				</data>
+				<key>MatchOS</key>
+				<string>10.12</string>
+				<key>Replace</key>
+				<data>
+				g8O8g/si
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm_idle patch by Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ILniAAAADzA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.12</string>
+				<key>Replace</key>
+				<data>
+				ILniAAAAkJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm_pkg_scope_msr © Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				vgcAAAAx0uiU/P//
+				</data>
+				<key>MatchOS</key>
+				<string>10.12</string>
+				<key>Replace</key>
+				<data>
+				vgcAAAAx0pCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm_core_scope_msrs © Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				vgIAAAAx0uhs/P//
+				</data>
+				<key>MatchOS</key>
+				<string>10.12</string>
+				<key>Replace</key>
+				<data>
+				vgIAAAAx0pCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Broadwell-E CPUID Patch 10.12</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g8Dp
+				</data>
+				<key>Replace</key>
+				<data>
+				g8Dh
+				</data>
+			</dict>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -207,13 +304,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>5960XPatch 10.12 by mano</string>
+				<string>X99 Patch by braumbear</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
 				SIH7AAAAQA==
 				</data>
+				<key>MatchBuild</key>
+				<string>10.12</string>
 				<key>Name</key>
 				<string>IOPCIFamily</string>
 				<key>Replace</key>
@@ -254,14 +353,21 @@
 		<string>Mac Pro</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Memory</key>
+		<dict>
+			<key>Channels</key>
+			<integer>4</integer>
+			<key>SlotCount</key>
+			<integer>8</integer>
+		</dict>
 		<key>ProductName</key>
 		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
-		<string>C02LCW72F693</string>
+		<string>C02KQA01F9VM</string>
 		<key>SmUUID</key>
 		<string>FBE737CF-5CC1-43EB-BA4B-678D653111F2</string>
 		<key>Trust</key>
-		<false/>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
